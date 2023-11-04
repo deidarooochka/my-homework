@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru"> <!--русификатор-->
+    <head>
+        <link rel="stylesheet" type="text/css" href="style3.css"> <!--Подключение css-->
+        <meta charset="utf-8" /> <!--Кодировка страницы-->
+        <title>Главная</title>
+    </head>
+    <body>
+        <nav>
+            <ul> 
+                <li>
+                    <a href="main.html"> Главная станица</a> 
+                    
+                </li>
+                <li>
+                    <a href="hobby.html">Мое хобби</a> 
+                </li>
+                <li>
+                    <a href="film.html">Мой любимый сериал</a> 
+                </li>
+                <li>
+                    <a href="#show">Таблица Мои любимые сериалы</a> 
+                </li>
+                <li>
+                    <a href="#actors">Таблица Мои любимые актеры и актрисы</a> 
+                </li>
+                <li>
+                    <a href="#form">Форма</a> 
+                </li>
+            </ul>
+        </nav>
+        <div class="main">
+        <table class="shows" id="show">
+            <tr>
+                <th colspan="3">Мои любимые сериалы</th>
+            </tr>
+            <tr>
+                <th>Название</th>
+                <th>Жанр</th>
+                <th>Год выхода</th>
+            </tr>
+            <tr>
+                <td class="bold"><a href="\js курсы\hw2\film.html">1. Однажды в сказке</a></td>
+                <td>Фэнтези, мелодрама, приключения</td>
+                <td>2011 год</td>
+            </tr>
+            <tr>
+                <td class="bold"><a href=" ">2. Сотня</a></td>
+                <td>Фантастика, постапокалипсис, драма, детектив</td>
+                <td>2014 год</td>
+            </tr>
+            <tr>
+                <td class="bold"><a href=" ">3. Леденящие душу приключения Сабрины</a></td>
+                <td>Ужасы, фэнтези, триллер, драма, детектив</td>
+                <td>2018 год</td>
+            </tr>
+            <tr>
+                <td class="bold"><a href=" ">4. Одни из нас</a></td>
+                <td>Фантастика, постапокалипсис, драма</td>
+                <td>2023 год</td>
+            </tr>
+            </table>
+            <table class="shows actors" id="actors">
+                <tr>
+                    <th colspan="4">Мои любимые актеры и акрисы</th>
+                </tr>
+                <tr>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Возраст</th>
+                    <th>Фото</th>
+                </tr>
+                <tr>
+                    <td>Гон</td>
+                    <td>Ю</td>
+                    <td>44 года</td>
+                    <td><img src="гон_ю.jpeg"></td>
+                </tr>
+                <tr>
+                    <td>Альба</td>
+                    <td>Баптиста</td>
+                    <td>26 лет</td>
+                    <td><img src="альба.jpg"></td>
+                </tr>
+                <tr>
+                    <td>Финн</td>
+                    <td>Вулфхард</td>
+                    <td>20 лет</td>
+                    <td><img src="финн.jpg"></td>
+                </tr>
+                <tr>
+                    <td>Милли Бобби</td>
+                    <td>Браун</td>
+                    <td>19 лет</td>
+                    <td><img src="милли.jpg"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="main">
+            <form id="form">
+                <div class="forma">
+                    <h2>Форма</h2>
+                    <div class="f">
+                        <label for="firstName">Имя</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Введите имя" required>
+                    </div>
+                    <div class="f">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Введите email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                    </div>
+                    <div class="f">
+                        Пол:
+                        <label for="woman">Женский</label>
+                        <input type="radio" name="pol" id="woman">
+                        <label for="man">Мужской</label>
+                        <input type="radio" name="pol" id="man">
+                    </div>
+                    <div class="f">
+                        <textarea cols = 40 rows = 10>Напишите что-нибудь о себе:</textarea>
+                    </div>
+                    <a onclick="return confirm('Готово!')"><button class="but" name="ok" type="submit" style="color:white; background-color: #40294f"><b>Отправить</b></button></a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

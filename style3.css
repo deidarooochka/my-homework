@@ -1,0 +1,116 @@
+body{
+    background: #e0beec;
+}
+nav ul {
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0; /* Убираем внутренние отступы по умолчанию */
+    height: 100%; /* Задаем высоту на 100% */
+    width: 250px; /* Задаем ширину на 260px */
+    position: fixed; /* Фиксируем позицию */
+    top: 0; /* Выравниваем по верхней границе */
+    left: 0; /* Выравниваем по левой границе */
+    background-color: #40294f; /* Устанавливаем фоновый цвет */
+}
+
+nav ul li {
+    list-style: none; /* Убираем маркеры списка */
+}
+
+nav ul li a {
+    display: block; /* Делаем ссылки блочными элементами */
+    font-family: century gothic; /* Устанавливаем шрифт для текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 20px; /* Устанавливаем размер шрифта */
+    color: #ffffff; /* Устанавливаем цвет текста */
+    position: relative; /* Задаем позиционирование */
+    padding: 25px 0 25px 38px; /* Задаем внутренние отступы */
+}
+nav ul li a:before {
+    content: ''; /* Добавляем пустой контент */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 0px; /* Размещаем сверху */
+    right: 0px; /* Размещаем справа */
+    width: 0%; /* Ширина по умолчанию равна 0% */
+    height: 100%; /* Высота равна 100% */
+    background: #e0beec; /* Устанавливаем фоновый цвет */
+    border-radius: 40px 0px 0px 40px; /* Задаем скругление углов */
+    z-index: -1; /* Помещаем под ссылку */
+    transition: all 300ms ease-in-out; /* Добавляем эффект плавного изменения */
+}
+
+nav ul li a:hover {
+    color: #000000; /* Устанавливаем цвет текста при наведении курсора мыши */
+}
+
+nav ul li a:hover:before {
+    width: 95%; /* Изменяем ширину псевдоэлемента при наведении */
+}
+.main {
+    margin-left: 250px; /* Устанавливаем отступ слева, чтобы контент не перекрывал меню */
+}
+th {
+    border: 2px solid black;
+    padding: 10px;
+    font-family: century gothic;
+    font-size: 20px;
+ }
+ td{
+        border: 2px solid black;
+        padding: 10px;
+        font-family: century gothic;
+        font-size: 20px;
+     
+ }
+ table{
+    background: rgb(192, 150, 214);
+ }
+ .bold{
+    font-weight: bold;
+ }
+ .shows{
+    margin-left: 50px;
+    margin-top: 50px;
+ }
+ .shows a{
+    text-decoration: none;
+    color:black;
+ }
+ td img{
+    width: 200px;
+ }
+ .shows.actors{
+    margin-left: 300px;
+    margin-top: 100px;
+ }
+ .forma{
+    width: 500px;
+    height: 500px;
+    background: rgb(192, 150, 214);
+    padding: 30px;
+    margin-left: 330px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px 5px rgb(61, 61, 61);
+    font-size: 20px;
+    font-family: century gothic;
+ }
+ .but{
+    font-size: 20px;
+    font-family: century gothic;
+    margin-left: 180px;
+    margin-top: 30px;
+    height: 40px;
+    border-radius: 40px 40px 40px 40px;
+    
+    
+ }
+ #firstName, #email{
+width: 200px;
+height: 30px;
+margin: 10px;
+ }
+ h2{
+    text-align: center;
+ }
+ .f{
+    margin-top: 10px;
+ }

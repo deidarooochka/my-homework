@@ -1,0 +1,89 @@
+h1 {
+    text-align: center; /* Выравнивание текста по центру */
+    color: white; /* Цвет текста */
+    font-size: 40px; /* Размер шрифта */
+    font-family: century gothic;
+  
+}
+
+.container {
+    display: flex; /* Отображаем элементы внутри контейнера в виде строки */
+    flex-direction: column; /* Определяем направление элементов внутри контейнера - столбец */
+}
+
+.row {
+    display: flex; /* Отображаем элементы внутри строки в виде строки */
+    align-items: center; /* Выравнивание элементов внутри строки по вертикали */
+    margin-bottom: 50px; /* Отступ снизу для каждой строки */
+}
+
+.row img {
+    width: 600px; /* Ширина картинки */
+    height: auto; /* Автоматическая высота картинки, чтобы соответствовать пропорциям */
+    padding: 30px; /* Отступы вокруг картинки */
+}
+
+.row p {
+    color: white; /* Цвет текста */
+    font-family: century gothic; /* Шрифт текста */
+    font-size: 18px; /* Размер шрифта */
+    text-align: justify; /* Выравнивание текста по ширине */
+    padding: 20px; /* Внутренние отступы текста */
+    line-height: 1.5; /* Межстрочный интервал */
+    text-indent: 30px; /* Отступ первой строки текста */
+}
+
+nav ul {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренний отступ у списка */
+    margin: 0; /* Убираем внешний отступ у списка */
+    
+}
+
+nav ul li {
+    display: inline-block; /* Отображаем элементы списка в одной строке */
+}
+
+nav ul li a {
+    display: block; /* Делаем ссылки блочными элементами */
+    padding: 10px 20px; /* Задаем отступы для ссылок */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #ffffff; /* Цвет ссылок */
+    font-family: century gothic;
+}
+
+nav ul li a:hover {
+    background-color: #181818; /* Цвет фона при наведении на ссылку */
+}
+
+.head {
+    background-color: #2942b5; /* Задаем цвет меню */
+    height: auto; /* Автоматическая высота */
+    width: 100%; /* Полная ширина */
+
+}
+
+.image-row {
+    display: flex; /* Отображаем элементы внутри строки в виде строки */
+    justify-content: center; /* Выравнивание элементов в центре по горизонтали */
+    margin-bottom: 300px; /* Отступ снизу для всей строки с картинками */
+}
+
+.image-container {
+    height: 200px; /* Высота контейнера для картинки */
+    margin-right: 20px; /* Отступ между контейнерами с картинками */
+}
+
+.image-container img {
+    display: block; /* Делаем картинку блочным элементом, чтобы применить размеры и отступы */
+}
+
+.image-container p {
+    margin: 6px 0; /* Внешние отступы для текста */
+    font-size: 18px; /* Размер шрифта */
+    color: white; /* Цвет текста */
+    text-align: left; /* Выравнивание текста по левому краю */
+    width: 200px; /* Ширина текста */
+    line-height: 1.5; /* Межстрочный интервал */
+    font-family: century gothic;
+}

@@ -1,0 +1,77 @@
+nav ul {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренний отступ у списка */
+    margin: 0; /* Убираем внешний отступ у списка */
+}
+
+nav ul li {
+    display: inline-block; /* Отображаем элементы списка в одной строке */
+}
+
+nav ul li a {
+    background-image: linear-gradient(to right, #979797, black); /* Параметры градиента */
+    background-repeat: no-repeat; /* Фон не повторяется */
+    background-size: 0 100%; /* Градиент пока не показываем */
+    text-decoration: none; /* Убираем подчёркивание */
+    transition: 0.3s; /* Время перехода */
+    display: block; /* Делаем ссылки блочными элементами */
+    padding: 10px 40px; /* Задаем отступы для ссылок */
+    color: #ffffff; /* Цвет ссылок */
+    font-family: Century gothic;
+}
+nav ul li a:hover {
+    background-size: 100% 100%; /* Отображаем градиент */
+}
+
+.head {
+    background-color: black; /* Задаем цвет меню */
+    height: auto; /* Автоматическая высота */
+    width: 100%; /* Полная ширина */
+}
+h1, h2{
+    color:black;
+    font-family: Century gothic;
+    text-align: center;
+}
+
+.text{
+    background-color: #212121;
+    color:white;
+    width: 98%;
+    padding:10px;
+    height: auto;
+
+}
+p{
+    color:white;
+    font-family: Century gothic;
+    text-align: justify;
+    padding: 10px;
+    font-size: 20px;
+}
+.image{
+    width: 315px;
+    height: auto;
+    padding-left: 30px;
+}
+.image2{
+    width: auto;
+    height: 400px;
+    padding-left: 33px;
+}
+.centered-image {
+        width: 500px;
+        padding-left: 450px;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+}
+footer p{
+    text-align: center;
+    font-family: century gothic;
+    color: white;
+    padding-top: 30px;
+}
