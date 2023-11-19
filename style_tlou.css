@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    background: #111111;
+    color: #000;
+    font-family: century gothic;
+    font-size: 14px;
+}
+p{
+    text-align: justify;
+    margin: 15px;
+    line-height: 25px;
+    color: #000;
+    font-family: century gothic;
+    font-size: 18px; 
+}
+
+
+
+#header {
+    background: #111111;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#navigation {
+    background: rgb(6, 110, 34);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    float: left;
+}
+
+nav ul li {
+    
+    position: relative;
+    left: -50%;
+    float: left;
+}
+
+nav ul li a {
+    background-repeat: no-repeat; /* Фон не повторяется */
+    background-size: 0 100%; /* Градиент пока не показываем */
+    text-decoration: none; /* Убираем подчёркивание */
+    transition: 0.3s; /* Время перехода */
+    display: block; /* Делаем ссылки блочными элементами */
+    padding: 20px 40px; /* Задаем отступы для ссылок */
+    color: #ffffff; /* Цвет ссылок */
+    font-family: Century gothic;
+    transition: all 0.5s ease;
+}
+nav ul li a:hover { 
+    transform: translateY(7px) rotateX(20deg);
+    color:black;
+    
+}
+
+.photos {
+	text-align: center;
+	margin: 20px;
+	overflow: hidden;    
+}
+.photos a {
+	width: 33.3%;
+	display: block;
+	float: left;
+	line-height: 0;
+}
+.photos img {
+	width: 100%;
+	height: auto;
+    
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 90px;
+}
+
+.img{
+    display:block;
+      margin:0 auto;
+      max-width:100%;
+}
+#container img {
+    max-width: 100%;
+    height: auto;
+    min-width: 300px;
+}
+
+#sidebar {
+    width: 40%;
+    padding: 10px;
+    
+    background: #111111;
+}
+
+.block {
+    clear: both;
+  }
+  
+
+#image {
+    margin-bottom: 10px;
+}
+
+#content {
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    background-color: #DCDCDC;
+    width: 100%;
+    display: block;
+    margin: 20px;
+    position: relative;
+    
+}
+
+#footer {
+    padding: 10px;
+    background: rgb(6, 110, 34);
+    height: 100px;
+}
+
+.logo {
+    display: inline-block;
+    width: 100px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: century gothic;
+}
+h2{
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.main{
+    display: flex; /* Отображаем элементы внутри строки в виде строки */
+    justify-content: center; /* Выравнивание элементов в центре по горизонтали */
+   margin-bottom: 60px;
+}
+
+.container2 {
+    position: relative;
+    width: 400px;
+    height: auto;
+    margin: 20px;
+  }
+  
+  .container2 img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: perspective(500px) rotateY(270deg);
+    transition: transform 0.9s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+  
+  .overlay h2 {
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 50px rgba(255, 255, 255,
+    0.4), 0 0 80px rgba(255, 255, 255, 0.2), 0 0 150px rgba(255, 255, 255, 0.1);
+  }
+  
+  .container2:hover .overlay {
+    opacity: 1;
+    transform: perspective(500px) rotateY(0deg);
+  }
+
+  .container2:hover .overlay h2 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 50px rgba(255, 255, 255,
+    0.4), 0 0 80px rgba(255, 255, 255, 0.2), 0 0 150px rgba(255, 255, 255, 0.1);
+}
+
+h1.title-example{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 50px rgba(255, 255, 255,
+    0.4), 0 0 80px rgba(255, 255, 255, 0.2), 0 0 150px rgba(255, 255, 255, 0.1);
+}
+/*  CSS код для линии над заголовком */
+h1.title-example:before {
+    content: '';
+    display: block;
+    height: 1px; /* Высота линии */
+    background: #ffffff; /* Цвет линии */
+    width: 150px; /* Ширина линии до наведения */
+    margin: 0 auto 10px; /* Отступ с боков по центру и снизу */
+	transition: 1s; /* Время, за которое линия возвращается после наведения */
+}
+h1.title-example:hover:before {
+    width: 250px; /* Ширина линии при наведении */
+	transition: ease-out 1s; /* Время, за которое линия расширяется при наведении */
+}
+/*  CSS код для линии под заголовком */
+h1.title-example:after {
+    content: '';
+    display: block;
+    height: 1px; /* Высота линии */
+    background: #ffffff; /* Цвет линии */
+    width: 150px; /* Ширина линии до наведения */
+    margin: 10px auto 0; /* Отступ с боков по центру и сверху */
+	transition: 1s; /* Время, за которое линия возвращается после наведения */
+}
+h1.title-example:hover:after {
+    width: 250px; /* Ширина линии при наведении */
+	transition: ease-out 1s; /* Время, за которое линия расширяется при наведении */
+}
+
+.head{
+    margin: 100px 0px 60px 0px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    padding: 20px 10px 50px 10px;
+  }
+  
+  .video {
+    max-width: 100%;
+  }
+  
+  .grayscale {
+    filter: grayscale(0%);
+    transition: filter 0.3s ease;
+  }
+  
+  .grayscale:hover {
+    filter: grayscale(100%);
+  }
+  
+
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sidebar {
+        width: 100%;
+        justify-content: center;
+    }
+}
